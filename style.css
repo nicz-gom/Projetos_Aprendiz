@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    /*Cores*/
+    --main: #d4bcaa;
+    --backgroud: #60a5f5;
+    --input: #d9d9d9;
+    --text: #ffffff;
+    --placeholder: #b9b8b8;
+    --form: #d3b8a6;
+
+    height: 100vh;
+    background-color: var(--backgroud);
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+
+    background: var(--main);
+    border-bottom: 2px solid var(--text);
+    width: 100vw;
+}
+
+.name{
+    padding-right: 70%;
+}
+
+.registro{
+    padding-right: 30%;
+}
