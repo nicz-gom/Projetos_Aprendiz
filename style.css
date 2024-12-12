@@ -9,6 +9,7 @@
 body{
     /*Cores*/
     --main: #d4bcaa;
+    --backgroud2: #cfc8c8;
     --backgroud: #60a5f5;
     --input: #d9d9d9;
     --text: #ffffff;
@@ -23,20 +24,7 @@ h1{
     color: var(--text);
 }
 
-.line{
-    height: 2px;
-    background-color: var(--text);
-}
-
-.texto1{
-    font-size: 40px;
-    font-weight: 300;
-}
-
-.texto2{
-    font-size: 60px;
-    font-weight: 500;
-}
+/*Início do cabeçalho superior*/
 
 .header{
     display: flex;
@@ -54,14 +42,30 @@ h1{
 }
 
 
+.texto1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.line{
+    height: 2px;
+    background-color: var(--text);
+}
+
+.texto2{
+    font-size: 60px;
+    font-weight: 500;
+}
+
 .registro{
     padding-left: 50%;
 }
 
 .registro ul{
-    width: 200px;
     display: flex;
     flex-direction: column;
+    border: 1px solid var(--text);
+    border-radius: 10px;
 }
 
 .registro a{
@@ -71,30 +75,31 @@ h1{
     
     display: flex;
     justify-content: center;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+    transition: 0.8s;
+}
+
+.registro a:hover{
+    transform: scale(1.06);
 }
 
 .registro li{
     list-style: none;
 }
 
-.lineRegistroA{
-    height: 1px;
-    background-color: var(--text);
-    width: 75px;
-    
-}
+/*Fim do cabeçalho superior*/
 
-.lineRegistroB {
-    height: 1px;
-    background-color: var(--text);
-    width: 75px;
-}
+
+
+/*Início da publi*/
 
 .outdoor{
     display: flex;
     align-items: center;
     height: 100vh;
-    background-image: url(Imagem/Green_Photographic_Environment_Charity_Bio-Link_Website.png);
 }
 
 .outdoor h1{
@@ -102,4 +107,74 @@ h1{
     padding-top: 12%;
     font-size: 60px;
     width: 50%;
+}
+
+/*Fim da publi*/
+
+/*PARTE DO ENTRAR*/
+
+.body-cadastro{
+    background-color: var(--backgroud2);
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--form);
+    height: 500px;
+    width: 450px;
+    border: 1px solid var(--text);
+    border-radius: 10px;
+}
+
+/*Início div titulo*/
+.title{
+    font-size: 25px;
+}
+/*Fim div titulo*/
+
+/*Início div input*/
+.dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+input{
+    height: 32px;
+    width: 400px;
+    margin: 15px;
+    background-color: var(--input);
+    color: var(--placeholder);
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    padding-left: 10px;   
+}
+
+button{
+    height: 37px;
+    width: 193px;
+    border-radius: 5px;
+    background-color: var(--text);
+    color: var(--backgroud2);
+    font-size: 25px;
+
+
+}
+/*Fim div input*/
+
+
+.body-entrar{
+    background-color: var(--backgroud2);
 }
